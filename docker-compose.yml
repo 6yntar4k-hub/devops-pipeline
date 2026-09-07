@@ -1,8 +1,8 @@
-version: '3.8'
-
-services:
-  web:
-     image: myapp:v1
-     ports:
-      - "80:80"
-     restart: always
+   version: '3.8'
+   
+   services:
+     web:
+       build: .  # ← ВАЖНО: собираем образ из текущей папки
+       ports:
+         - "80:80"
+       restart: always
